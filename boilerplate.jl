@@ -20,7 +20,6 @@ function get_inp(test=false)
   io = open(inp_path, "r")
   inp_s = read(io, String)
   inp_s = split(inp_s, "\r\n")
-  # inp_s = map(s -> parse(Int, "0" * s), inp_s) # to int
   close(io)
   return inp_s
 end
